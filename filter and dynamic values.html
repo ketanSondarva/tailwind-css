@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <!-- note that: here gap is for vertical spacing and space is for horizontal spacing: -->
+    <div class="flex justify-center gap-4 space-x-1 flex-wrap">
+        <div class=" p-2 rounded-md m-2">
+            <div class="bg-orange-800 text-white p-2 rounded-md ">original:</div>
+            <img src="./landscape.jpg" alt="landscape" class="h-[350px] w-[550px] my-[12px] rounded-sm shadow-blue-500 shadow-2xl">
+        </div>
+
+        <div class="p-2 rounded-md m-2">
+            <div class="bg-orange-800 text-white p-2 rounded-md ">sepia-[.60]:</div>
+            <img src="./landscape.jpg" alt="landscape" class="sepia-[.60] h-[350px] w-[550px] my-[12px]  rounded-sm shadow-blue-500 shadow-2xl">
+        </div>
+
+        <div class=" p-2 rounded-md m-2">
+            <div class="bg-orange-800 text-white p-2 rounded-md ">blur-lg:</div>
+            <img src="./landscape.jpg" alt="landscape" class="blur-lg h-[350px] w-[550px] my-[12px]  rounded-sm shadow-blue-500 shadow-2xl">
+        </div>
+
+        <div class=" p-2 rounded-md m-2">
+            <div class="bg-orange-800 text-white p-2 rounded-md ">brightness-125:</div>
+            <img src="./landscape.jpg" alt="landscape" class="brightness-125 h-[350px] w-[550px] my-[12px]  rounded-sm shadow-blue-500 shadow-2xl">
+        </div>
+
+        <div class=" p-2 rounded-md m-2">
+            <div class="bg-orange-800 text-white p-2 rounded-md ">grayscale-[90%]:</div>
+            <img src="./landscape.jpg" alt="landscape" class="grayscale-[90%] h-[350px] w-[550px] my-[12px]  rounded-sm shadow-blue-500 shadow-2xl">
+        </div>
+
+        <div class=" p-2 rounded-md m-2">
+            <div class="bg-orange-800 text-white p-2 rounded-md ">hue-rotate-30:</div>
+            <img src="./landscape.jpg" alt="landscape" class="hue-rotate-30 h-[350px] w-[550px] my-[12px]  rounded-sm shadow-blue-500 shadow-2xl">
+        </div>
+    </div>
+</body>
+</html>
