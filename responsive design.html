@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- first note that: -->
+    <!-- threre are 5 measor screen size available, you can visist docs for responsive design @tailwindcss.com -->
+
+    <!-- Tailwind CSS follows a mobile-first approach, meaning styles specified without a breakpoint will apply to all screen sizes unless overridden by styles with breakpoints. -->
+
+    <!-- This will only center text on screens 640px and wider, not on small screens -->
+    <div class="sm:text-center"></div>
+
+    <!-- This will center text on mobile, and left align it on screens 640px and wider -->
+    <div class="text-center sm:text-left"></div>
+
+    <!-- lets see the differance (sm, md, lg, xl, 2xl):  -->
+
+    <!-- by default: mobile screen size - less than 640px -->
+    <!-- sm: 640px, md: 786px, lg: 1024px, xl: 1280px, 2xl: 1536px -->
+    <img src="./landscape.jpg" alt="landscape" class="m-7 rounded-md h-41 mx-auto w-[400px] sm:w-[480px] md:w-[580px] lg:w-[680px] xl:w-[780px] 2xl:w-[880px]" >
+
+    <h1 class="text-2xl lg:text-3xl mx-7 mb-3 text-center font-extrabold">About manali</h1>
+    <div class="mx-7 text-md md:text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quis saepe quaerat cupiditate ex ipsam. Illum explicabo ducimus, quod placeat rerum, soluta hic dolorem fugit pariatur maxime dolorum eaque iste sequi, quis ad at distinctio nisi eum dolores quisquam enim laboriosam. Aliquid facere magnam dolor distinctio eum quis veniam, voluptate dicta cumque ad natus eius! Esse dignissimos non iure. Aut?</div>
+
+    <br>
+</body>
+</html>
