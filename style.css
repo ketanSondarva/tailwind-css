@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
+
+.btn {
+    @apply text-white py-1 rounded-sm px-3 bg-green-700 hover:bg-green-600 active:bg-green-800;
+}
+
+/* .text-white {
+    color: aqua;
+} */
+
 @tailwind utilities;
+
+/* when we define class which is already a uitlity class then it will not work   */
+/* to override it we define such class after this '@tailwind utilities' declaration:  */
+/* see the difference by commenting below code and uncommenting above .text-white  */
+
+.text-white {
+    color: aqua;
+}
+
+/* layer directive:  */
+
+/* when we want to change any layer of the tailwind we use layer directive:  */
+
+@layer utilities {
+    .white-btn {
+        background-color: white;
+        padding: 5px 9px;
+        border-radius: 2px;
+        border: solid 1px black;
+    }
+}
